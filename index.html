@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./normalize.css">
-    <link rel="stylesheet" href="./admin-dashboard.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/admin-dashboard.css">
 </head>
 <body>
     <div class="header">
         <div class="nav-bar">
-            <img src="magnify.svg" alt="search">
-            <label for="search"></label>
+            <label id="search-magnify-glass" for="search"></label>
             <input id="search" type="text" placeholder="Search">
             <div class="user">
+                <img src="./svg/notifications.svg" alt="notifications">
+                <img src="./cat.jpg" alt="profile picture">
                 <p>SyKoivisto</p>
             </div>
         </div>
 
         <div class="taskbar">
+            <img src="./cat.jpg" alt="profile picture">
             <div class="welcome-message">
                 <p class="hi-there">Hi there,</p>
                 <p class="username">SyKoivisto (@sykoivisto)</p>
@@ -31,7 +33,109 @@
             </div>
         </div>
     </div>
-    <div class="sidebar"></div>
-    <div class="main-content">Main content</div>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="./svg/dashboard.svg" alt="dashboard logo">
+            <h1>Dashboard</h1>
+        </div>
+        <ul>
+            <li class="active"><img src="./svg/home.svg" alt="home icon"> Home</li>
+            <li><img src="./svg/profile.svg" alt=""> Profile</li>
+            <li><img src="./svg//messages.svg" alt=""> Messages</li>
+            <li><img src="./svg/history.svg" alt=""> History</li>
+            <li><img src="./svg/tasks.svg" alt=""> Tasks</li>
+            <li><img src="./svg/communities.svg" alt=""> Communities</li>
+        </ul>
+        <ul>
+            <li><img src="./svg/settings.svg" alt=""> Settings</li>
+            <li><img src="./svg/support.svg" alt=""> Support</li>
+            <li><img src="./svg/privacy.svg" alt=""> Privacy</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="projects">
+            <h3>Your Projects</h3>
+            <div class="cards-container">
+                <div class="card">
+                    <div class="stripe"></div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris. Phasellus lacinia nisl a interdum cursus. Cras maximus purus nisi, vitae luctus ipsum tempor sed. In est libero, eleifend vitae porttitor vel, sagittis sed lorem. Nulla posuere nunc in mi iaculis eleifend.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="stripe"></div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris. Phasellus lacinia nisl a interdum cursus. Cras maximus purus nisi, vitae luctus ipsum tempor sed. In est libero, eleifend vitae porttitor vel, sagittis sed lorem. Nulla posuere nunc in mi iaculis eleifend.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="stripe"></div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris. Phasellus lacinia nisl a interdum cursus. Cras maximus purus nisi, vitae luctus ipsum tempor sed. In est libero, eleifend vitae porttitor vel, sagittis sed lorem. Nulla posuere nunc in mi iaculis eleifend.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="stripe"></div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris. Phasellus lacinia nisl a interdum cursus. Cras maximus purus nisi, vitae luctus ipsum tempor sed. In est libero, eleifend vitae porttitor vel, sagittis sed lorem. Nulla posuere nunc in mi iaculis eleifend.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="stripe"></div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris. Phasellus lacinia nisl a interdum cursus. Cras maximus purus nisi, vitae luctus ipsum tempor sed. In est libero, eleifend vitae porttitor vel, sagittis sed lorem. Nulla posuere nunc in mi iaculis eleifend.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="stripe"></div>
+                    <div class="card-content">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris. Phasellus lacinia nisl a interdum cursus. Cras maximus purus nisi, vitae luctus ipsum tempor sed. In est libero, eleifend vitae porttitor vel, sagittis sed lorem. Nulla posuere nunc in mi iaculis eleifend.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content-sidebar">
+            <div class="announcements">
+                <h3>Announcements</h3>
+                <div class="container">
+                    <div class="slide">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="trending">
+                <h3>Trending</h3>
+                <div class="container">
+                    <div class="slide">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris.</p>
+                    </div>
+                    <div class="slide">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed purus vel ante tristique molestie et a mauris.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

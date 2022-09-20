@@ -145,7 +145,7 @@ input {
     align-items: center;
     gap: 15px;
     border-radius: 5px;
-    padding: 3px 0px 3px 10px
+    padding: 3px 0px 3px 10px;
 }
 .sidebar ul li img {
     height: 25px;
@@ -159,9 +159,8 @@ input {
 
 .main-content {
     display: grid;
-    grid-template-columns: 1fr 200px;
-}
-.projects {
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
     padding: 20px;
 }
 .projects h3 {
@@ -195,5 +194,26 @@ input {
     margin-top: 10px;
     font-size: 12px;
     line-height: 22px;
+    color: var(--bg-dark);
+}
+.main-content-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    margin-top: 10px;
+}
+.slide h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.slide p {
+    line-height: 20px;
+    font-size: 12px;
     color: var(--bg-dark);
 }
